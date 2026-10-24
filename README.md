@@ -1,5 +1,7 @@
 # Amazon Review Analytics with Apache Spark and Explainable AI
 
+**Live demo: https://kanalpawadi.github.io/amazon-review-analytics-spark/**
+
 Sentiment analysis, fake review detection and product recommendation on **Amazon Reviews 2023 (Electronics, 43.9 M ratings)**
 with **Apache Spark (PySpark, Spark SQL, MLlib), Hadoop HDFS and Hive**, and an explainable React web app.
 
@@ -38,7 +40,8 @@ npm install
 npm run dev
 ```
 
-Open http://localhost:5173. To publish it, run `npm run build` and upload `web/dist` to Netlify, GitHub Pages or Vercel.
+Open http://localhost:5173. The public version is served by GitHub Pages from the `gh-pages` branch
+(the contents of `web/dist` after `npm run build`).
 
 ## Rebuild the results
 
