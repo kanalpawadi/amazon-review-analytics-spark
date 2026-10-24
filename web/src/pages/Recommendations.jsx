@@ -69,7 +69,7 @@ function UserView({ users }) {
         </Card>
       </div>
       <p className="tiny" style={{ marginTop: 10 }}>
-        Vector Attribution Mechanism: Implicit ALS assigns a 64-dimensional latent taste vector to every product and user.
+        Vector Attribution Mechanism: Implicit ALS assigns a 20-dimensional latent taste vector (rank 20) to every product and user.
         The system computes the exact cosine similarity between the candidate recommendation and all previously rated items in the user's history to explain why the item emerged.
       </p>
     </>
@@ -83,7 +83,7 @@ export default function Recommendations() {
   return (
     <>
       <FeatureBanner
-        image="/images/recommendations.jpg"
+        image="images/recommendations.jpg"
         title="Collaborative Filtering & Latent Vector Recs"
         desc="Implicit Alternating Least Squares (ALS) Matrix Factorization on Apache Spark, with item-to-item cosine similarity explanations for every recommendation."
         tags={['Spark Implicit ALS', 'Latent Factor Vectors', 'Cosine Similarity XAI', 'Leave-One-Out Evaluation']}
@@ -157,7 +157,7 @@ export default function Recommendations() {
                 </Card>
                 <Card title="Why Implicit ALS Outperforms Explicit ALS" badge="Theoretical Insight">
                   <p className="small">
-                    <b>Explicit ALS:</b> Minimizes squared error on known star ratings. Under severe sparsity (0.01% density),
+                    <b>Explicit ALS:</b> Minimizes squared error on known star ratings. Under severe sparsity (0.0048% density),
                     it suffers from cold products receiving inflated 5-star predicted ratings, degrading real-world top-K hit rate.
                   </p>
                   <p className="small">

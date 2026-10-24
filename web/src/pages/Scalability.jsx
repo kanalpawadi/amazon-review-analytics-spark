@@ -7,7 +7,7 @@ import { useColors } from '../lib/theme.js'
 const STEP_TEXT = {
   sql_aggregation: 'Spark SQL distributed group-by & aggregation over Parquet storage',
   text_cleaning: 'Phase 2 regex tokenization, punctuation strip, and negation preservation (CPU bound)',
-  sentiment_scoring: 'TF-IDF Vectorization + Logistic Regression inference over millions of reviews (ML inference)',
+  sentiment_scoring: 'TF-IDF Vectorization + Logistic Regression inference over every review in the sample (ML inference)',
   als_training: 'Iterative Alternating Least Squares matrix factorization (5 iterations, shuffle heavy)',
 }
 
@@ -111,13 +111,13 @@ export default function Scalability() {
   return (
     <>
       <FeatureBanner
-        image="/images/scalability.jpg"
-        title="Distributed Cluster Scaling & Dataproc Benchmarks"
-        desc="Empirical performance benchmarks measuring execution time, speedup ratio, and parallel efficiency across multi-core Spark nodes."
-        tags={['Apache Spark 3.5', 'Hadoop HDFS', 'Dataproc Cluster', 'Amdahl Law Benchmarks']}
+        image="images/scalability.jpg"
+        title="Spark Scaling Benchmarks"
+        desc="Measured run time, speed-up and parallel efficiency of Spark workloads as data and CPU cores grow. The full-scale study is scripted for a Google Dataproc cluster."
+        tags={['Apache Spark 3.5', 'Measured on Google Colab', 'Dataproc-ready scripts', 'Amdahl Law Benchmarks']}
       />
 
-      <PageHead title="Distributed Cluster Scalability" badge="Dataproc Telemetry">
+      <PageHead title="Spark Scalability" badge="Measured benchmarks">
         Empirical evaluation of Apache Spark scaling across varying data fractions and CPU worker allocations.
       </PageHead>
       <Loaded state={state} what="scalability runs">

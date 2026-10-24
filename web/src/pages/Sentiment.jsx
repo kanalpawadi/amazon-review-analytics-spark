@@ -261,7 +261,7 @@ export default function Sentiment() {
   return (
     <>
       <FeatureBanner
-        image="/images/sentiment-ai.jpg"
+        image="images/sentiment-ai.jpg"
         title="Explainable Sentiment Intelligence"
         desc="Natural Language Processing with Apache Spark MLlib, TF-IDF n-grams, and exact linear attribution breakdown for total prediction transparency."
         tags={['Spark MLlib', 'TF-IDF Unigrams & Bigrams', 'Exact Linear Attributions', 'What-If Diagnostics']}

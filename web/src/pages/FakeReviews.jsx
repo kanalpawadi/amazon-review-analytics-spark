@@ -126,7 +126,7 @@ export default function FakeReviews() {
   return (
     <>
       <FeatureBanner
-        image="/images/fake-reviews.jpg"
+        image="images/fake-reviews.jpg"
         title="Fraud Forensics & Anomaly Shield"
         desc="Multi-signal forensic heuristic scoring and Spark MLlib KMeans reviewer clustering to uncover coordinated bursts, sentiment mismatch, and copy-paste rings."
         tags={['Heuristic Point Attribution', 'KMeans Clustering', 'Temporal Burst Detection', 'Zero Black-Box']}

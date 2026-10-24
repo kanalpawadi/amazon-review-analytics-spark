@@ -32,7 +32,7 @@ export default function About() {
   return (
     <>
       <PageHead title="System Architecture & Methodology" badge="DKTE Research Project">
-        End-to-end Big Data architecture analyzing 43.9 million customer reviews with Apache Spark, Hadoop HDFS, Apache Hive, and Explainable AI.
+        End-to-end Big Data architecture for the 43.9-million-rating Amazon Electronics dataset with Apache Spark, Hadoop HDFS, Apache Hive and Explainable AI. Results come from a 1% user sample; the full-scale run is scripted for Google Dataproc.
       </PageHead>
 
       <Card title="Distributed End-to-End Processing Pipeline" sub="Architectural progression from raw JSON data to explainable insights" badge="Data Flow">
@@ -69,7 +69,7 @@ export default function About() {
 
         <Card title="Recommendations: Item-to-Item XAI" badge="Implicit ALS">
           <p className="small">
-            Matrix factorization computes 64-dimensional latent factor vectors for users and products. Rather than
+            Matrix factorization computes 20-dimensional latent factor vectors (rank 20) for users and products. Rather than
             presenting black-box recommendations, candidate items are explained by identifying the highest cosine
             similarity product in the user's historical purchase record: <i>"Because you rated X"</i>.
           </p>
@@ -81,7 +81,7 @@ export default function About() {
           <ul className="small" style={{ margin: 0, paddingLeft: 18, lineHeight: 1.7 }}>
             <li><b>Ground-Truth Boundaries:</b> Flagged reviews represent high statistical suspicion, not absolute legal fraud proof.</li>
             <li><b>Weak Supervision:</b> Sentiment ground-truth is derived from star ratings (1-2★ negative, 3★ neutral, 4-5★ positive), which carries inherent human rating noise.</li>
-            <li><b>Catalog Sparsity:</b> The Amazon dataset has high sparsity (~0.01% density). Unseen cold-start users or newly listed products require content-based fallbacks.</li>
+            <li><b>Catalog Sparsity:</b> The Amazon dataset has high sparsity (0.0048% density in the 5% user slice). Unseen cold-start users or newly listed products require content-based fallbacks.</li>
             <li><b>Explanatory Scope:</b> Attributions explain the mathematical mechanics of the model, not necessarily external psychological causation.</li>
           </ul>
         </Card>

@@ -13,9 +13,9 @@ export default function Overview() {
   return (
     <>
       <HeroShowcase
-        image="/images/hero-banner.jpg"
+        image="images/hero-banner.jpg"
         title="Amazon Product Review Intelligence & Analytics"
-        desc="Scalable big data exploration over 43.9 million customer reviews powered by Apache Spark, Hadoop HDFS, Hive, and real-time Explainable AI (XAI) diagnostics."
+        desc="Big data analysis of Amazon Electronics reviews (43.9 million ratings in the full dataset) with Apache Spark, and an explanation for every prediction."
         badges={[
           { icon: '⚡', text: 'Apache Spark 3.5 Ingestion' },
           { icon: '📦', text: 'Electronics Category: 43.9M Total Ratings' },
@@ -24,8 +24,8 @@ export default function Overview() {
         ]}
       />
 
-      <PageHead title="Exploratory Data Analysis" badge="Sample: 1% Users · 12,878 Reviews">
-        Analyzed across 1% user cluster sample with full review histories cleaned on Apache Spark and queried via Apache Hive.
+      <PageHead title="Exploratory Data Analysis" badge="Sample: 1% of users · 431,302 reviews">
+        Computed on a 1% sample of users (all of their reviews), cleaned with Apache Spark and queried with Spark SQL.
       </PageHead>
 
       <Loaded state={state} what="the overview">

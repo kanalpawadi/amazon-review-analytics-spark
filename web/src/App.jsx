@@ -42,8 +42,7 @@ export default function App() {
         </div>
 
         <div className="telemetry-badge">
-          <span className="telemetry-pulse" />
-          <span>Cluster: Spark 3.5 Active</span>
+          <span>Built on Apache Spark 3.5</span>
         </div>
 
         <nav className="nav">
